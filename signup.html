@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign up</title>
+
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <h1>Sign Up to HTML-DEMO-2</h1>
+
+    <p>Please provide the relevant information to complete the sign-up</p>
+
+    <form
+      method="POST"
+      action="http://localhost:8081/test"
+      enctype="multipart/form-data"
+    >
+      <div>
+        <label for="username">Username</label>
+        <input id="username" type="text" name="username2" required />
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <input
+          id="password"
+          type="password"
+          name="password"
+          required
+          minlength="6"
+          maxlength="20"
+        />
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" />
+      </div>
+
+      <div>
+        <label for="age">Age</label>
+        <input id="age" type="number" name="age" min="10" max="50" />
+      </div>
+
+      <div>
+        <label>
+          <input type="checkbox" name="hobby" value="cricket" />
+          Cricket
+        </label>
+
+        <label>
+          <input type="checkbox" name="hobby" value="swimming" />
+          Swimming
+        </label>
+      </div>
+
+      <div>
+        <label for="bio">Bio</label>
+        <textarea id="bio" name="bio"></textarea>
+      </div>
+
+      <br />
+
+      <div>
+        <p>Gender</p>
+
+        <label>
+          <input type="radio" name="gender" value="male" />
+          Male
+        </label>
+
+        <label>
+          <input type="radio" name="gender" value="female" />
+          Female
+        </label>
+      </div>
+
+      <select name="country" required>
+        <option value="">None</option>
+        <option value="pakistan">Pakistan</option>
+        <option value="greece">Greece</option>
+        <option value="china">China</option>
+        <option value="ireland">Ireland</option>
+      </select>
+
+      <br />
+
+      <label for="dob">Date of birth</label>
+      <input id="dob" type="date" name="date-of-birth" />
+
+      <br />
+
+      <input type="file" name="profile-picture" accept=".jpg, .jpeg, .png" />
+
+      <input type="submit" value="Submit the form" />
+    </form>
+  </body>
+</html>
