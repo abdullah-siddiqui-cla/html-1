@@ -74,3 +74,25 @@ reset.addEventListener('click', () => {
   // Reset input field to 0
   input.value = 0;
 });
+
+// Listen for any key press while the user is typing in the input field
+input.addEventListener('keydown', (event) => {
+  // Check if the key pressed was the "Enter" key
+  if (event.key === 'Enter') {
+    // If yes, call the same function that runs when the "Calculate" button is clicked
+    // This allows the user to press Enter instead of clicking the button
+    clickHandler();
+  }
+});
+
+// When the input field gains focus (i.e., the user clicks or tabs into it)
+input.addEventListener('focus', () => {
+  // Add a CSS class called 'focused' to style the input differently when active
+  input.classList.add('focused');
+});
+
+// When the input field loses focus (i.e., the user clicks or tabs out of it)
+input.addEventListener('blur', () => {
+  // Remove the 'focused' class so it goes back to its normal style
+  input.classList.remove('focused');
+});
