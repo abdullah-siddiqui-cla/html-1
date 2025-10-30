@@ -1,0 +1,27 @@
+input {
+  width: 300px;
+}
+
+.hidden {
+  display: none;
+}
+
+#grade p.a {
+  color: green;
+}
+
+#grade p.b {
+  color: yellow;
+}
+
+#grade p.c {
+  color: brown;
+}
+
+#grade p.d {
+  color: purple;
+}
+
+#grade p.f {
+  color: red;
+}
