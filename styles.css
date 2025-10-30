@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, white, lightgray);
+}
+
+.content {
+  border-radius: 10px;
+  border: 1px solid black;
+
+  box-shadow: 5px 5px 15px 5px lightgray;
+  overflow: hidden;
+}
+
+.content .content-heading {
+  padding: 20px 10px;
+
+  background-color: aliceblue;
+}
+
+.content .content-body {
+  padding: 10px;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.content .content-body div:first-child label {
+  color: cornflowerblue;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.content .content-body div:nth-child(2) {
+  display: flex;
+  gap: 5px;
+}
+
+.content .content-body div:nth-child(3) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+button {
+  border-radius: 3px;
+  border: none;
+  padding: 10px;
+}
+
+#calculate {
+  background-color: cadetblue;
+}
+
+#reset {
+  background-color: red;
+}
+
+#grade {
+}
+
+input[type="number"] {
+  border: none; /* Removes default border */
+  outline: none; /* Removes the blue outline when focused */
+  background: none; /* Removes background color */
+  box-shadow: none; /* Removes any browser-specific shadow */
+  appearance: none; /* Removes OS-level styling (e.g., rounded corners on iOS) */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+
+  /* Add some borders */
+  border: 1px solid black;
+  border-radius: 5px;
+
+  width: 300px;
+  padding: 5px;
+
+  /* Add a small transition (animation for width increase) */
+  transition: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+input[type="number"].focused {
+  border: 1px solid green;
+  font-size: 20px;
+  width: 400px;
+}
+
+.hidden {
+  display: none;
+}
+
+#grade p {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#grade p.a {
+  color: green;
+}
+
+#grade p.b {
+  color: yellow;
+}
+
+#grade p.c {
+  color: brown;
+}
+
+#grade p.d {
+  color: purple;
+}
+
+#grade p.f {
+  color: red;
+}

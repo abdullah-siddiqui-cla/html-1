@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Practice</title>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="content-heading">
+          <h2>Grade Calculator</h2>
+        </div>
+
+        <div class="content-body">
+          <div>
+            <label>Enter Numbers out of 100</label>
+
+            <input type="number" min="0" max="100" placeholder="0" value="0" />
+          </div>
+
+          <div>
+            <button type="button" id="calculate">Calculate!</button>
+            <button type="button" id="reset">Reset</button>
+          </div>
+
+          <div>
+            <h3 class="hidden">Your grade:</h3>
+
+            <div id="grade"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/script.js" defer></script>
+  </body>
+</html>
