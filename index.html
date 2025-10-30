@@ -13,20 +13,28 @@
   <body>
     <div class="container">
       <div class="content">
-        <div>
-          <label>Number out of 100</label>
-
-          <br />
-
-          <input type="number" min="0" max="100" placeholder="0" value="0" />
+        <div class="content-heading">
+          <h2>Grade Calculator</h2>
         </div>
 
-        <button type="button" id="calculate">Calculate!</button>
-        <button type="button" id="reset">Reset</button>
+        <div class="content-body">
+          <div>
+            <label>Enter Numbers out of 100</label>
 
-        <h3>Your grade:</h3>
+            <input type="number" min="0" max="100" placeholder="0" value="0" />
+          </div>
 
-        <div id="grade"></div>
+          <div>
+            <button type="button" id="calculate">Calculate!</button>
+            <button type="button" id="reset">Reset</button>
+          </div>
+
+          <div>
+            <h3 class="hidden">Your grade:</h3>
+
+            <div id="grade"></div>
+          </div>
+        </div>
       </div>
     </div>
 
