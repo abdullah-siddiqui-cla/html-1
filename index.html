@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Index</title>
+
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body>
+    <form action="/" method="GET">
+      <div class="p-2 flex flex-col gap-4">
+        <div class="flex flex-col gap-2">
+          <label class="text-sm font-bold">Email</label>
+          <input
+            id="email-input"
+            type="text"
+            required
+            placeholder="email"
+            name="email"
+            class="border border-black rounded"
+          />
+
+          <p class="hidden">
+            The format of the email address should like example@example.com
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <label class="text-sm font-bold">Phone</label>
+          <input
+            id="phone-number-input"
+            required
+            type="text"
+            placeholder="Phone number"
+            name="phone_number"
+            class="border border-black rounded"
+          />
+
+          <p class="hidden">
+            The format of the phone number is +92 XXX XXXXXXX
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <label class="text-sm font-bold">Time in 12-hour</label>
+          <input
+            id="time-input"
+            type="text"
+            required
+            placeholder="Time"
+            name="time"
+            class="border border-black rounded"
+          />
+
+          <p class="hidden help-text-time text-red-600">
+            The format of the time is HH:MM AM or PM
+          </p>
+        </div>
+        <button id="submit-button" type="submit" class="p-2 bg-orange-200">
+          Submit
+        </button>
+      </div>
+    </form>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
