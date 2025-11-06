@@ -44,7 +44,7 @@ form.addEventListener('submit', (event) => {
 
   // The form has been validated.
 
-  event.target.submit();
+  // event.target.submit();
 });
 
 const array = [1, 6, 3, 6, 9];
